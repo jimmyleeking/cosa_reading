@@ -1,7 +1,7 @@
 name: cosa_reading
 description: A new Flutter project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/jimmyleeking/cosa_reading
 
 environment:
   sdk: '>=3.1.0 <4.0.0'
@@ -10,8 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  archive: ^3.4.9
-  xml2json: ^6.2.1
+  xml: ^6.3.0
+
+
 
 
 

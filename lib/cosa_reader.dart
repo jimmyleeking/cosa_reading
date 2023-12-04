@@ -3,7 +3,6 @@ library cosa_reading;
 import 'dart:io';
 import 'package:xml/xml.dart';
 import 'package:xml/xpath.dart';
-import 'package:xml2json/xml2json.dart';
 
 class APNInfo {
   /// 连接点名称
@@ -41,7 +40,7 @@ class CosaItem {
 }
 
 class COSAReader {
-  final myTransformer = Xml2Json();
+
   String lastFilePath = "";
 
   late Map<String, List<CosaItem>> dataMap;
@@ -102,7 +101,7 @@ class COSAReader {
           if (dataMap[key] == null) {
             dataMap[key] = [];
           }
-          print(key);
+          //print(key);
           dataMap[key]?.add(item);
         }
       });
